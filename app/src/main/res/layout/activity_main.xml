@@ -16,6 +16,7 @@
         android:layout_marginTop="@dimen/_35sdp"
         android:src="@drawable/mychatapplogo">
 
+
     </ImageView>
 
 
