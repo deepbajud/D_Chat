@@ -17,10 +17,18 @@
         android:src="@drawable/ic_launcher_background" />
 
     <TextView
+        android:id="@+id/txtHeading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:padding="@dimen/_20sdp"
         android:text="D Chat Will Send OTP To Your Entered Number"
+        android:textAlignment="center"
+        android:textColor="#6e6e6e"
         android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
 
     <RelativeLayout
         android:id="@+id/centerhorizontalline"
@@ -30,5 +38,58 @@
 
     </RelativeLayout>
 
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/CountryCodePicker"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_above="@+id/centerhorizontalline"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:layout_marginEnd="@dimen/_70sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:ccp_areaCodeDetectedCountry="true"
+        app:ccp_autoDetectCountry="true">
+
+    </com.hbb20.CountryCodePicker>
+
+    <EditText
+        android:id="@+id/edtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@id/centerhorizontalline"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:hint="Enter Your Mobile Number"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <android.widget.Button
+        android:id="@+id/btnSend_OTP"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_below="@id/edtPhoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_27sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:background="#35d366"
+        android:text="SEND OTP"
+        android:textColor="@color/white"
+        android:textSize="15sp">
+
+    </android.widget.Button>
+    
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnSend_OTP"
+        android:id="@+id/progressBarofMain"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/_27sdp">
+
+    </ProgressBar>
 
 </RelativeLayout>

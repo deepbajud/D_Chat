@@ -41,7 +41,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     //county code pick library
-    implementation("com.hbb:ccp:2.5.1")
+    implementation("com.hbb20:ccp:2.5.1")
     //sdp
     implementation ("com.intuit.sdp:sdp-android:1.1.0")
 }
