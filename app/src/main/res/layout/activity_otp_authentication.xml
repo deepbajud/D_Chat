@@ -28,58 +28,28 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/edtOTP"
         android:layout_width="@dimen/_130sdp"
         android:layout_height="@dimen/_45sdp"
-        android:layout_below="@id/txtHeading"
         android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtHeading"
         android:layout_marginStart="@dimen/_90sdp"
         android:layout_marginEnd="@dimen/_90sdp"
         android:hint="Enter OTP here"
-        android:inputType="number"
+        android:textColor="@color/black"
+        android:id="@+id/edtOTP"
         android:textAlignment="center"
-        android:textColor="@color/black">
+        android:inputType="number">
 
     </EditText>
 
     <TextView
-        android:id="@+id/txtChangeNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Didn't Recieve? Change Your Number"
+        android:id="@+id/txtChangeNumber"
         android:layout_below="@id/edtOTP"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_13sdp"
-        android:text="Didn't Recieve? Change Your Number"
-        android:textColor="@color/black"
-        android:textSize="18sp">
-
-    </TextView>
-
-    <android.widget.Button
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/_35sdp"
-        android:layout_below="@id/txtChangeNumber"
-        android:id="@+id/btnVerify_otp"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/white"
-        android:paddingLeft="@dimen/_35sdp"
-        android:text="Verify OPT"
-        android:layout_marginTop="@dimen/_40sdp"
-        android:paddingRight="@dimen/_35sdp"
-        android:background="#25d366">
-
-    </android.widget.Button>
-
-    <ProgressBar
-        android:id="@+id/progress2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/btnVerify_otp"
-        android:layout_marginTop="@dimen/_27sdp"
-        android:visibility="invisible">
-
-    </ProgressBar>
+        android:textColor="b"
 
 
 </RelativeLayout>
