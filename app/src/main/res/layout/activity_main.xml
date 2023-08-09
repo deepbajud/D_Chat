@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/imgLogo"
         android:layout_width="@dimen/_100sdp"
         android:layout_height="@dimen/_100sdp"
         android:layout_centerHorizontal="true"
@@ -23,7 +23,7 @@
         android:id="@+id/textheading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/logo"
+        android:layout_below="@id/imgLogo"
         android:fontFamily="@font/raleway"
         android:padding="@dimen/_17sdp"
         android:text="D Chat Will Send OTP To Your Entered Number"
@@ -45,7 +45,7 @@
 
 
     <com.hbb20.CountryCodePicker
-        android:id="@+id/countrycodepicker"
+        android:id="@+id/CountryCodePicker"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_45sdp"
         android:layout_above="@id/centerhorizontalline"
@@ -60,7 +60,7 @@
 
 
     <EditText
-        android:id="@+id/getphonenumber"
+        android:id="@+id/edtPhone_Number"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_45sdp"
         android:layout_below="@id/centerhorizontalline"
@@ -76,10 +76,10 @@
 
 
     <android.widget.Button
-        android:id="@+id/sendotpbutton"
+        android:id="@+id/btnSend_otp"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/_35sdp"
-        android:layout_below="@id/getphonenumber"
+        android:layout_below="@id/edtPhone_Number"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/_25sdp"
         android:background="#25d366"
@@ -93,10 +93,10 @@
 
 
     <ProgressBar
-        android:id="@+id/progressbarofmain"
+        android:id="@+id/progressbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/sendotpbutton"
+        android:layout_below="@id/btnSend_otp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:visibility="invisible">
